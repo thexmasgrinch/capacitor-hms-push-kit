@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      "capacitor-hms-push-kit@github:ikamaru/capacitor-hms-push-kit",
+      "C:\\Users\\John Dodget\\Documents\\GitHub\\gproapp2"
+    ]
+  ],
+  "_from": "capacitor-hms-push-kit@github:ikamaru/capacitor-hms-push-kit",
+  "_id": "capacitor-hms-push-kit@git+ssh://git@github.com/ikamaru/capacitor-hms-push-kit.git#75a36b8a35e9214d1a8bbc4f26f01c62c5c289e0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/capacitor-hms-push-kit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "capacitor-hms-push-kit@github:ikamaru/capacitor-hms-push-kit",
+    "name": "capacitor-hms-push-kit",
+    "escapedName": "capacitor-hms-push-kit",
+    "rawSpec": "github:ikamaru/capacitor-hms-push-kit",
+    "saveSpec": "github:ikamaru/capacitor-hms-push-kit",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.com/ikamaru/capacitor-hms-push-kit.git#75a36b8a35e9214d1a8bbc4f26f01c62c5c289e0",
+  "_spec": "github:ikamaru/capacitor-hms-push-kit",
+  "_where": "C:\\Users\\John Dodget\\Documents\\GitHub\\gproapp2",
+  "author": {
+    "name": "Ikamaru"
+  },
+  "bugs": {
+    "url": "https://github.com/ikamaru/capacitor-hms-push-kit.git/issues"
+  },
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  },
+  "description": "Capacitor plugin for HMS push kit",
+  "devDependencies": {
+    "@capacitor/android": "^3.0.0",
+    "@capacitor/core": "^3.0.0",
+    "@capacitor/ios": "^3.0.0",
+    "@ionic/prettier-config": "^1.0.0",
+    "@ionic/swiftlint-config": "^1.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "eslint": "^7.11.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-java": "^0.8.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.32.0",
+    "swiftlint": "^1.0.1",
+    "typescript": "~4.0.3"
+  },
+  "eslintConfig": {
+    "extends": "@ionic/eslint-config/recommended"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorHmsPushKit.podspec"
+  ],
+  "homepage": "https://github.com/ikamaru/capacitor-hms-push-kit#readme",
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "HUAWEI",
+    "HMS",
+    "FCM",
+    "PUSH"
+  ],
+  "license": "MIT",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "name": "capacitor-hms-push-kit",
+  "peerDependencies": {
+    "@capacitor/core": "^3.0.0"
+  },
+  "prettier": "@ionic/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikamaru/capacitor-hms-push-kit.git"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "eslint": "eslint . --ext ts",
+    "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
+    "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "swiftlint": "node-swiftlint",
+    "watch": "tsc --watch"
+  },
+  "swiftlint": "@ionic/swiftlint-config",
+  "types": "dist/esm/index.d.ts",
+  "version": "3.0.0"
+}
