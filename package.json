@@ -55,7 +55,7 @@
     }
   },
   "peerDependencies": {
-    "@capacitor/core": "^6.0.0"
+    "@capacitor/core": "^7.0.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
