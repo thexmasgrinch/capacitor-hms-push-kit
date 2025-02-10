@@ -3,7 +3,10 @@ import type { PushKitPlugin } from './definitions';
 
 export class PushKitWeb extends WebPlugin implements PushKitPlugin {
   constructor() {
-    super();
+    super({
+      name: 'PushKit',
+      platforms: ['web'],
+    });
   }
   async getToken(): Promise<{ token: string }>{
     throw new Error('Not supported in the Web.');
